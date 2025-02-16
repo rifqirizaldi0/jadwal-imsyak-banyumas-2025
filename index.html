@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Ramadhan 2025</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🌙 Hitung Mundur Ramadhan 2025 🕌</h1>
+    <div id="countdown"></div>
+    <p id="message">
+      Bulan penuh berkah akan segera tiba, persiapkan diri untuk menyambutnya!
+      🤲
+    </p>
+
+    <div class="button-container">
+      <button id="music-button"><i data-feather="play"></i></button>
+      <button id="repeat-button"><i data-feather="rotate-ccw"></i></button>
+    </div>
+
+    <audio id="background-music" loop>
+      <source src="ramadhan.mp3" type="audio/mpeg" />
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <h2>🕌 Jadwal Imsakiyah Kabupaten Banyumas 2025 🕌</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Tanggal</th>
+            <th>Imsak</th>
+            <th>Subuh</th>
+            <th>Terbit</th>
+            <th>Duha</th>
+            <th>Dzuhur</th>
+            <th>Ashar</th>
+            <th>Maghrib</th>
+            <th>Isya</th>
+          </tr>
+        </thead>
+        <tbody id="imsakiyah-table"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
