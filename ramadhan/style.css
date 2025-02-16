@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #4685ea;
+  --secondary-color: #caddf2;
+  --tertiary-color: #000000;
+  --quaternary-color: #fad0c4;
+  --quinary-color: #ff758c;
+  --senary-color: #ff7eb3;
+  --kontol: #d01be0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background: linear-gradient(#4685ea, #caddf2);
+  color: rgb(15, 15, 15);
+  padding: 99px;
+}
+
+#countdown {
+  font-size: 2em;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+button {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+button:hover {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--tertiary-color)
+  );
+}
+
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  min-width: 300px; /* Tambahkan ini untuk mencegah tabel mengecil terlalu banyak */
+  border-collapse: collapse;
+  background: white;
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 600px) {
+  .table-container {
+    display: block;
+    overflow-x: auto;
+  }
+
+  table {
+    display: block;
+    width: auto;
+    min-width: 100%; /* Pastikan tabel tidak mengecil terlalu banyak */
+  }
+}
+
+/* ...existing code... */
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: var(--primary-color);
+  color: white;
+}
